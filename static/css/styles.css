@@ -1,0 +1,117 @@
+.body {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  background-color: #fdfdfd;
+}
+
+/* .zoom {
+  padding: 0;
+  transition: transform .2s;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  opacity: 1;
+  transform: scale(0.5);
+  -ms-transform: scale(0.5); 
+  -webkit-transform: scale(0.5); 
+}
+
+.card {
+  box-shadow: 0 16px 48px #e3e7eb;
+}
+
+.shadow {
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1);
+} */
+
+.masthead {
+  background: #3398E1;
+  height: auto;
+  padding-bottom: 15px;
+  box-shadow: 0 16px 48px #E3E7EB;
+  padding-top: 10px;
+}
+
+
+/* Navbar */
+.navbar-brand {
+margin-left: 4em;
+font-family: "Roboto", sans-serif;
+letter-spacing: 0.09em;
+}
+
+/*.navbar-nav {
+margin-right: 4em;
+}*/
+
+.navbar-primary {
+justify-content: flex-end;
+margin: auto 4rem;
+}
+
+.navbar-primary .nav-item {
+margin: 0 0.5rem;
+}
+
+.navbar .navbar-nav .nav-link {
+color: rgba(0, 0, 0, 0.5);
+letter-spacing: 0.15em;
+text-transform: uppercase;
+}
+
+/*.navbar-nav span {
+margin-right: 1rem;
+margin-left: 2rem;
+}*/
+
+.custom-toggler.navbar-toggler {
+border-color: transparent;
+}
+
+.custom-toggler .navbar-toggler-icon {
+color: black;
+}
+
+.nav-item {
+position: relative;
+}
+
+/*.nav-item:after {
+content: "/";
+position: absolute;
+bottom: 0;
+left: 0;
+width: 0%;
+border-bottom: 1px solid black;
+transition: 0.4s;
+}*/
+
+/* 
+.navbar-primary .nav-item:after {
+content: "/";
+position: absolute;
+top: 0.25rem;
+left: auto;
+right: -0.5rem;
+} */
+
+.navbar-primary .nav-item:last-child:after {
+content: none;
+}
+
+.navbar-primary .nav-link:before {
+content: "";
+position: absolute;
+bottom: 0;
+left: 0.5rem;
+width: 0%;
+border-bottom: 1px solid #3398E1;
+transition: 0.3s;
+}
+
+.navbar-primary .nav-link:hover:before {
+width: calc(100% - 1rem);
+}

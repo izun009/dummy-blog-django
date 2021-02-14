@@ -1,0 +1,66 @@
+
+{% extends 'base.html' %} 
+{% load static %}
+
+<!-- Blog Page Title -->
+{% block page_title %}
+
+{{object.title}}
+
+{% endblock page_title %}
+
+{% comment %} 
+{% block app_css %}
+  <link rel="stylesheet" type="text/css" href="{% static 'css/about.css' %}">
+{% endblock app_css %} {% endcomment %}
+
+
+<!-- Blog Content Detail -->
+{% block content %}
+
+  <div class="container my-4">
+
+    <div class="row mt-5 mb-5">
+      
+      <div class="col-md-5 mt-3 mb-5 d-flex justify-content-center">
+          <img class="my-image" src="{% static 'about/images/wp-profile.jpg' %}">
+      </div>
+
+
+      <div class="col mt-5 mb-5 d-flex justify-content-center">
+        <div class="row">
+        <div class="col">
+          <h2 class="h2">Tentang Saya</h2>
+          <p class="text-justify">
+            SIAPA LU ???
+          </p>
+        </div>
+      </div>
+
+
+
+      </div>
+
+      
+    </div>
+      
+
+
+  </div>
+
+{% comment %} <div class="container">
+  <div class="row">
+
+    <div class="col">
+        {% load static %}
+        <img src="{% static 'images/wp-profile.jpg' %}" class="img-thumbnail" alt="...">
+    </div>
+
+    <div class="col">
+        keterangan izun
+    </div>
+
+  </div>
+</div> {% endcomment %}
+
+{% endblock content %}

@@ -1,0 +1,34 @@
+{% extends 'base.html' %} 
+
+<!-- Blog Page Title -->
+{% block page_title %}
+
+{{tutorial_list.title}}
+
+{% endblock page_title %}
+
+<!-- Blog Content Detail -->
+{% block content %}
+
+<div class="container">
+  <div class="row">
+    <div class="col card mb-4 mt-4 left  top">
+      <div class="card-body">
+        <h1>
+          {% block title %} 
+            {{ tutorial_list.title }} 
+          {% endblock title %}
+        </h1>
+        <p class=" text-muted">
+          Author: {{ tutorial_list.author }} | 
+          {{ tutorial_list.category }} | 
+          {{ tutorial_list.created_on|date }}
+        </p>
+        <p class="card-text ">{{ tutorial_list.content | safe }}</p>
+      </div>
+    </div>
+    {% comment %} {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %} {% endcomment %}
+  </div>
+</div>
+
+{% endblock content %}

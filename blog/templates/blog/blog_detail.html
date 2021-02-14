@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+<!-- Blog Page Title -->
+{% block page_title %}
+
+{{object.title}}
+
+{% endblock page_title %}
+
+<!-- Blog Content Detail -->
+{% block content %}
+
+<div class="container">
+  <div class="row">
+    <div class="col card mb-4 mt-4 left  top">
+      <div class="card-body">
+        <h1>{% block title %} {{ object.title }} {% endblock title %}</h1>
+        <p class=" text-muted">
+          Author: {{ object.author }} | {{ object.category }} | {{ object.created_on|date }}
+        </p>
+        <p class="card-text ">{{ object.content | safe }}</p>
+      </div>
+    </div>
+    {% comment %} {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %} {% endcomment %}
+  </div>
+</div>
+
+{% endblock content %}

@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>
+            {% block page_title %}
+            
+            {% endblock page_title %}
+        </title>
+        
+        {% include 'snippets/styles.html' %}
+        
+        {% comment %} {% block app_css %}
+            
+        {% endblock app_css %} {% endcomment %}
+
+    </head>
+
+    <body>
+
+        <!-- Navigation -->
+        {% include 'snippets/navbar.html' %}
+
+
+
+
+
+
+        <!-- blog content -->
+        {% block content %}
+
+        {% endblock content %}
+
+
+
+
+
+
+
+        <!-- Footer -->
+        {% include 'snippets/footer.html' %}
+
+        <!-- JS, Jquery, Popperjs -->
+        {% include 'snippets/scripts.html' %}
+    </body>
+</html>
